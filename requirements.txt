@@ -1,7 +1,0 @@
-flask
-google-api-python-client
-textblob
-nltk
-transformers
-torch
-scikit-learn
