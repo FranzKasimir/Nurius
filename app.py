@@ -105,6 +105,8 @@ def summarize_comments(comments):
     result = summarizer(joined, max_length=130, min_length=30, do_sample=False)
     return result[0]['summary_text']
 
+import os
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
