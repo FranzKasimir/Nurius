@@ -17,7 +17,7 @@ PASSWORD = 'Curius'
 
 YOUTUBE_API_KEY = "AIzaSyARqmLKUxE8TRZHeI2K8MXMWhehKWsF8VQ"
 youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
